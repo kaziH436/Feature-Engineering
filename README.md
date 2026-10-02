@@ -118,11 +118,17 @@ Lasso regression can be used for feature selection by penalizing the absolute si
 # Feature Scaling
 Ensure no feature is overshawdowing the other features in the datasets 
 
-## Standardization
+## Standardization (z-score norm)
+Works best with datasets that have a normal or Gaussian distibution, hence when the dataset has outliers and range is not too big
+1. Rescales our data around a mean of 0
+2. std of 1
 
+### Formula 
+- find the mean and std 
+- Z = (X - mean)/std
 
 ## Normalization
-This works when the machine learning model doesn't have outliers so there isn't anything to skew the data
+This works when the machine learning model doesn't have outliers but the scale varies significantly
 Min-max scaling: 0-1 range
 
 X_new = (X-X_min)/(X_max-X_min)
