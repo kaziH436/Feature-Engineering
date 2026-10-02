@@ -112,3 +112,17 @@ Lasso regression can be used for feature selection by penalizing the absolute si
         model.fit(X,y)
         coefficients=model.coef_
 
+
+
+
+# Feature Scaling
+Ensure no feature is overshawdowing the other features in the datasets 
+
+## Standardization
+
+
+## Normalization
+This works when the machine learning model doesn't have outliers so there isn't anything to skew the data
+Min-max scaling: 0-1 range
+
+X_new = (X-X_min)/(X_max-X_min)
