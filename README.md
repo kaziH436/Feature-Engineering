@@ -178,6 +178,13 @@ Example: Free shipping lifts purchases
 
 ##### Mann whitey (non-parameteric)
 
+##### Parameteric
+1. Z test
+2. t test
+3. two group test
+4. paired test
+5. 
+
 ## Correlation 
 from -1 to 1:
 - 1: means positive correlation
