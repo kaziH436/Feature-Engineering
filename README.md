@@ -132,3 +132,11 @@ This works when the machine learning model doesn't have outliers but the scale v
 Min-max scaling: 0-1 range
 
 X_new = (X-X_min)/(X_max-X_min)
+
+
+## one hot encoding VS label encoding 
+### Disadvantages 
+1. one hot encoding is going to cost a lot of memory
+2. suffers from out of vocabulary problem 
+3. The meaning is message is not properly captured 
+3. The size of a vector for CNN must be fixed and the one-hot encoding and label encoding has variable sizes inputs 
