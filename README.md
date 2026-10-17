@@ -113,8 +113,6 @@ Lasso regression can be used for feature selection by penalizing the absolute si
         coefficients=model.coef_
 
 
-
-
 # Feature Scaling
 Ensure no feature is overshawdowing the other features in the datasets 
 
@@ -125,18 +123,75 @@ Works best with datasets that have a normal or Gaussian distibution, hence when 
 
 ### Formula 
 - find the mean and std 
-- Z = (X - mean)/std
+- X is the raw value 
+
+      Z = (X - mean)/std
 
 ## Normalization
 This works when the machine learning model doesn't have outliers but the scale varies significantly
 Min-max scaling: 0-1 range
 
-X_new = (X-X_min)/(X_max-X_min)
+    X_new = (X-X_min)/(X_max-X_min)
 
 
-## one hot encoding VS label encoding 
-### Disadvantages 
-1. one hot encoding is going to cost a lot of memory
-2. suffers from out of vocabulary problem 
-3. The meaning is message is not properly captured 
-3. The size of a vector for CNN must be fixed and the one-hot encoding and label encoding has variable sizes inputs 
+### E(x) expected value 
+each distribution has its formula for this 
+
+## Choosing the distribution
+symmetric around an average and continious -> normal
+mean from small sample and don't know the population std -> student t distribution 
+
+### Mean
+The mean for a sample VS the mean for population:
+its not possible to get the population because its big and dynamic (people are being born etc) so we take a sample. 
+- Multiple samples then take the average.  
+- Better to have a bigger sample.
+
+
+
+## Bias VS Variance 
+
+
+## 1. NULL vs ALTernative Hypothesis 
+- NULL: nothing interesting is happening (default)
+- Alt: something is happening (claim)
+
+Example: free shipping has no effect 
+Example: Free shipping lifts purchases
+
+### 2. threshold = 0.05
+
+### 3. P values
+- P(a result this extreme/Ho True)
+- Small p value < 0.05: result is significant, reject the null hupothesis and the alt (claim) is working 
+- High p value > 0.05: We failed to reject the pull hypothesis, experiment failed
+
+#### How to find the p-value?
+
+##### T-test
+
+##### Chi tests
+
+##### Anova 
+
+##### Manova 
+
+##### Mann whitey (non-parameteric)
+
+##### Parameteric
+1. Z test
+2. t test
+3. two group test
+4. paired test
+5. 
+
+## Correlation 
+from -1 to 1:
+- 1: means positive correlation
+- -1: inversely correlated
+
+          
+  
+
+
+
